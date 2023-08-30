@@ -42,7 +42,7 @@ export const bookingsRouter = createTRPCRouter({
     .mutation(({ input }) => {
       const newBooking = {
         ...input,
-        id: faker.datatype.uuid(),
+        id: faker.string.uuid(),
         comments: [{ date: new Date(), comment: "Added by you" }],
         status: "Added",
         motivation: undefined,

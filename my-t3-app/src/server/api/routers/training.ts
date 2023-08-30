@@ -24,7 +24,7 @@ const options = faker.helpers.multiple(createRandomOptions, {
 
 function createRandomTraining() {
   return {
-    id: faker.datatype.uuid(),
+    id: faker.string.uuid(),
     name: faker.commerce.product(),
     startDate: faker.date.soon(),
     deadline: faker.date.soon(),
